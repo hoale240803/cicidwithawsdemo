@@ -1,0 +1,20 @@
+
+{
+    "region" : "ap-southeast-1",
+    "configuration" : "Release",
+    "framework"     : "net6.0",
+    "self-contained" : false,
+    "application"    : "AWSCodePipelineDemo",
+    "environment"    : "AWSCodePipelineDemo-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-01499076cbe8dbb80\";\"aws:ec2:vpc,Subnets\"=\"subnet-0d567983051f4027e\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.7.1 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "awscodepipelinedemo-dev",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "cicd_kepair",
+    "instance-profile"     : "CICD_Beanstalk",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
